@@ -42,7 +42,7 @@ public class test2 {
         double temp = number0;
         while (true) {
             System.out.printf("Enter operator: ");
-            String operator = sc.nextLine();
+            String operator =  calculate.inputOperator();
             if ("=".equals(operator)) {
                 System.out.println("Result: " + temp);
                 return;

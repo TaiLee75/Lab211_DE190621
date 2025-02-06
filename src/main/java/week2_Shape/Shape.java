@@ -3,20 +3,25 @@ package week2_Shape;
 
 
 public abstract class Shape {
-    private double Perimeter;
-     private double Area;
     
     
-    public abstract void printResult();
+private double perimeter, area;
 
     public double getPerimeter() {
-        return Perimeter;
+        return perimeter;
     }
 
     public double getArea() {
-        return Area;
+        return area;
     }
+
+
+    abstract void printResult();
+        
     
-    
+
+
+
+
     
 }

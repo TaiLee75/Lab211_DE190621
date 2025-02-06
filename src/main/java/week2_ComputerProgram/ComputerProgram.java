@@ -108,17 +108,17 @@ public class ComputerProgram {
         }
 
     }
-    
-    
-    public String inputOperator(){
-        while(true){
-            try{
-            String op = inputString();
-            return op;
-            }catch(IllegalStateException e){
-                
+
+    public String inputOperator() {
+        while (true) {
+            String operator = inputString();
+            if (operator.matches("[+\\-*/^=]")) {
+                return operator;
+            } else {
+                System.out.println("invalid operator!");
+                System.out.printf("Please input operator again: ");
             }
+
         }
     }
-
 }

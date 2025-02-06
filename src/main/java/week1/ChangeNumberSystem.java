@@ -85,6 +85,15 @@ public class ChangeNumberSystem {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+  // Validation
+    
     public  int inputRangeInt() {
         while (true) {
             try {
