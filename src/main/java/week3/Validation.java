@@ -22,11 +22,29 @@ public class Validation {
         }
     }
     
-    public static int inputPositiveInt() {
+    public static int inputIntGreaterThanTwo() {
         while (true) {
             try {
                 int result = Integer.parseInt(inputString());
                 if (result >= 2) {
+                    return result;
+                } else {
+                    System.out.println("Input must be a integer > 2");
+                    System.out.printf("Please input again: ");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Input must be an integer");
+                System.out.printf("Please input again: ");
+            }
+        }
+
+    }
+    
+    public static int inputPositiveInt() {
+        while (true) {
+            try {
+                int result = Integer.parseInt(inputString());
+                if (result  >= 0) {
                     return result;
                 } else {
                     System.out.println("Input must be a positive integer");

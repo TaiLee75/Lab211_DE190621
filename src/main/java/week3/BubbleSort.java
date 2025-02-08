@@ -21,7 +21,7 @@ public class BubbleSort {
     }
 
     void showArray() {
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 0; i < arr.length ; i++) {
             System.out.print(arr[i] + "  ");
         }
     }
@@ -29,7 +29,7 @@ public class BubbleSort {
     void sortValue() {
 
         boolean check = false;
-        for (int i = 0; i < arr.length - 1&& !check; i++) {
+        for (int i = 0; i < arr.length - 1 && !check; i++) {
             check = true;
             for (int j = 0; j < arr.length - i - 1; j++) {
 

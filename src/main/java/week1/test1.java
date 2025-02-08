@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class test1 {
 
     // LinearSearch
-    /*
+    
     public static void main(String[] args) {
       
         Scanner sc = new Scanner(System.in);
@@ -27,7 +27,9 @@ public class test1 {
         }else{
             System.out.println("Value not found!");
         }
-     */
+    }
+        
+        
     // Count Word and Character
     /*
     public static void main(String[] args) {
@@ -41,61 +43,61 @@ public class test1 {
      */
     //Equation
     
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Equation valid = new Equation();
-
-        System.out.println("========= Equation Program =========");
-        System.out.println("1. Calculate Superlative Equation");
-        System.out.println("2. Calculate Quadratic Equation");
-        System.out.println("3. Exit");
-        System.out.println("Please choose one option:");
-        int choice = valid.inputRangeInt();
-        switch (choice) {
-            case 1: {
-                System.out.printf("Enter A: ");
-                float a = valid.inputFloat();
-                System.out.printf("Enter B: ");
-                float b = valid.inputFloat();
-
-                Equation root = new Equation(a, b);
-                System.out.printf("Solution: x =");
-                System.out.println(root.calculateEquation(a, b).toString());
-                root.checkRoots(a, b);
-                break;
-            }
-            case 2: {
-                System.out.printf("Enter A: ");
-                float a = valid.inputFloat();
-                System.out.printf("Enter B: ");
-                float b = valid.inputFloat();
-                System.out.printf("Enter C: ");
-                float c = valid.inputFloat();
-                Equation root = new Equation(a, b, c);
-                List<Float> roots = new ArrayList<>();
-                roots = root.calculateQuadraticEquation(a, b, c);
-                if (roots == null) {
-                    System.out.println("This equation has no solutions!");
-                } else if (roots.isEmpty()) {
-                    System.out.println("This equation has infinitely solutions!");
-                } else {
-                    int i = 1;
-                    for (float x : roots) {
-                        System.out.printf("Solution: ");
-                        System.out.printf(" x" + i + " = " + x + "   ");
-                        i++;
-                    }
-                }
-                System.out.println("\n");
-                root.checkRoots(a, b, c);
-                break;
-            }
-            case 3: {
-                return;
-            }
-        }
-
-    }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        Equation valid = new Equation();
+//
+//        System.out.println("========= Equation Program =========");
+//        System.out.println("1. Calculate Superlative Equation");
+//        System.out.println("2. Calculate Quadratic Equation");
+//        System.out.println("3. Exit");
+//        System.out.println("Please choose one option:");
+//        int choice = valid.inputRangeInt();
+//        switch (choice) {
+//            case 1: {
+//                System.out.printf("Enter A: ");
+//                float a = valid.inputFloat();
+//                System.out.printf("Enter B: ");
+//                float b = valid.inputFloat();
+//
+//                Equation root = new Equation(a, b);
+//                System.out.printf("Solution: x =");
+//                System.out.println(root.calculateEquation(a, b).toString());
+//                root.checkRoots(a, b);
+//                break;
+//            }
+//            case 2: {
+//                System.out.printf("Enter A: ");
+//                float a = valid.inputFloat();
+//                System.out.printf("Enter B: ");
+//                float b = valid.inputFloat();
+//                System.out.printf("Enter C: ");
+//                float c = valid.inputFloat();
+//                Equation root = new Equation(a, b, c);
+//                List<Float> roots = new ArrayList<>();
+//                roots = root.calculateQuadraticEquation(a, b, c);
+//                if (roots == null) {
+//                    System.out.println("This equation has no solutions!");
+//                } else if (roots.isEmpty()) {
+//                    System.out.println("This equation has infinitely solutions!");
+//                } else {
+//                    int i = 1;
+//                    for (float x : roots) {
+//                        System.out.printf("Solution: ");
+//                        System.out.printf(" x" + i + " = " + x + "   ");
+//                        i++;
+//                    }
+//                }
+//                System.out.println("\n");
+//                root.checkRoots(a, b, c);
+//                break;
+//            }
+//            case 3: {
+//                return;
+//            }
+//        }
+//
+//    }
     
     //Change base number system
     /*
