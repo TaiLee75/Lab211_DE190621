@@ -17,7 +17,7 @@ public class test_week3 {
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter number of array: ");
-//        int number = Validation.inputPositiveInt();
+//        int number = Validation.inputIntGreaterThanTwo();
 //        BubbleSort bubble = new BubbleSort(number);
 //        bubble.geneRandomArray();
 //        bubble.showArray();
@@ -56,23 +56,35 @@ public class test_week3 {
     
     
     //Binary Search
+//    public static void main(String[] args) {
+//        System.out.println("Enter number of array: ");
+//        int number = Validation.inputIntGreaterThanTwo();
+//        System.out.println("Enter search value: ");
+//        int value = Validation.inputPositiveInt();
+//        BinarySearch binary = new BinarySearch(number);
+//        binary.geneRandomArray();
+//        binary.sortValue();
+//        binary.showArray();
+//        System.out.println("");
+//        int index = binary.searchValue(value);
+//        if(index != -1){
+//             System.out.println("\nFound " + value + " at index: " + index);
+//        }else{
+//             System.out.println("Value not found!");
+//        }
+//  }
+    
+    //Quick Sort
     public static void main(String[] args) {
-        System.out.println("Enter number of array: ");
+        Scanner sc = new Scanner(System.in);
+       System.out.println("Enter number of array: ");
         int number = Validation.inputIntGreaterThanTwo();
-        System.out.println("Enter search value: ");
-        int value = Validation.inputPositiveInt();
-        BinarySearch binary = new BinarySearch(number);
-        binary.geneRandomArray();
-        binary.sortValue();
-        binary.showArray();
+        QuickSort quick = new QuickSort(number);
+        quick.geneRandomArray();
+        quick.showArray();
+        
         System.out.println("");
-        int index = binary.searchValue(value);
-        if(index != -1){
-             System.out.println("\nFound " + value + " at index: " + index);
-        }else{
-             System.out.println("Value not found!");
-        }
-  }
-    
-    
+        quick.sortValue();
+        quick.showArray();
+    }
 }
