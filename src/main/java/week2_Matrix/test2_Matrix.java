@@ -16,22 +16,10 @@ public class test2_Matrix {
             choice = check.inputChoiceInt();
             switch (choice) {
                 case 1 -> {
-                    System.out.println("=====ADDITION========");
-                    System.out.println("Input value for matrix 1: ");
-                    System.out.print("row: ");
-                    int row = check.inputPositiveInt();
-                    System.out.print("column: ");
-                    int column = check.inputPositiveInt();
-                    Matrix matrix1 = new Matrix(row, column);
-                    for (int i = 0; i < row ; i++) {
-                        for (int j = 0; j < column ; j++) {
-                            System.out.print("a[" + i + "][" + j + "]: ");
-                            int value = check.inputInt();
-                            matrix1.setValueMatrix(i, j, value);
-                        }
-                    }
-                    matrix1.displayMatrix();
-                    System.out.println("");
+                    System.out.println("=====SUBTRACTION========");
+                    Matrix matrix1 = new Matrix();
+                    System.out.println("Enter value for matrix 1: ");
+                    matrix1 = inputValue();
 
                     Matrix matrix2 = new Matrix();
                     System.out.println("Enter value for matrix 2: ");
