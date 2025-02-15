@@ -77,6 +77,8 @@ public class test2_Matrix {
         }
     }
 
+    
+    
     public static Matrix inputValue() {
         Matrix check = new Matrix();
         System.out.print("row: ");

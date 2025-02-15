@@ -2,7 +2,6 @@ package week2_Matrix;
 
 import java.util.Scanner;
 
-
 public class Matrix {
 
     private int row;
@@ -142,7 +141,7 @@ public class Matrix {
         }
 
     }
-    
+
     public int inputChoiceInt() {
         while (true) {
             try {
